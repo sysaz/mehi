@@ -40,9 +40,6 @@ export default function Navigation({ currentPage, setCurrentPage }: NavigationPr
               width="120"
               height="40"
             />
-            <div className="hidden sm:block">
-              <p className="text-xs text-gray-600 leading-tight">Worldwide Trading</p>
-            </div>
           </div>
 
           {/* Desktop Menu */}

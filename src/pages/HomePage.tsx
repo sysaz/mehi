@@ -1,4 +1,7 @@
 import { ArrowRight, Globe, Zap, Shield, Users } from 'lucide-react';
+import BlurImage from '../components/BlurImage';
+
+const HEADER_PLACEHOLDER = "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADQAwCdASoUAAsAPzmEuVOvKKWisAgB4CcJYgAAW9vLS9fboPEvaoAA/lte6o4HNZj/8tPWOjYUFN00Xn1R4fOFB+GCdPCg0Apjqz6Ns6T2lyKbgVT0I4AA";
 
 export default function HomePage() {
   return (
@@ -31,12 +34,14 @@ export default function HomePage() {
             </div>
             <div className="hidden md:block">
               <div className="bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl p-1">
-                <img
+                <BlurImage
                   src="/images/header.webp"
                   alt="Industrial minerals and chemicals"
                   className="w-full h-96 object-cover rounded-xl"
+                  placeholder={HEADER_PLACEHOLDER}
                   width="600"
                   height="384"
+                  fetchPriority="high"
                 />
               </div>
             </div>

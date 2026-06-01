@@ -1,4 +1,8 @@
 import { Target, Lightbulb, Award, Users, Zap, Globe } from 'lucide-react';
+import BlurImage from '../components/BlurImage';
+
+const MISSION_PLACEHOLDER = "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAADwAwCdASoUAA0APzmEuVOvKKWisAgB4CcJYwCdABuUmwmvbCMQ1d68APYEvGbqAQ9RiNQnANZGJIpWPEpeTJ7BMQf4USsI+NrGjxXfiNST7Rq1p0QtZpgMiQJdU0g9sD552XnnT0OKoeKUa+YAAA==";
+const VISION_PLACEHOLDER  = "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAADwAwCdASoUAAsAPzmGuVOvKSWisAgB4CcJZACdABuLjJ9DXhvh0AYAAP3Zflq8QzUPmz/N79FEx6anf/xJ5PhStCyqnTINdgS3HQYV0RAhahk7W3AyEqp8vfsZolJkjNjvYEdEzdUAAA==";
 
 export default function MissionVisionPage() {
   const values = [
@@ -78,11 +82,11 @@ export default function MissionVisionPage() {
               </ul>
             </div>
             <div>
-              <img
+              <BlurImage
                 src="/images/mission.webp"
                 alt="Our mission"
                 className="rounded-xl shadow-lg w-full"
-                loading="lazy"
+                placeholder={MISSION_PLACEHOLDER}
                 width="600"
                 height="450"
               />
@@ -96,11 +100,11 @@ export default function MissionVisionPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1">
-              <img
+              <BlurImage
                 src="/images/vision.webp"
                 alt="Our vision"
                 className="rounded-xl shadow-lg w-full"
-                loading="lazy"
+                placeholder={VISION_PLACEHOLDER}
                 width="600"
                 height="450"
               />

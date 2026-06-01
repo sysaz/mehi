@@ -59,8 +59,9 @@ export default function ProductShowcase({ products }: ProductShowcaseProps) {
             <img
               src={product.image}
               alt={product.name}
-              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 bg-gray-200"
               loading="lazy"
+              decoding="async"
             />
             {/* Permanent bottom strip */}
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-gray-900/75 to-transparent px-2 pt-6 pb-2 group-hover:opacity-0 transition-opacity duration-200">
