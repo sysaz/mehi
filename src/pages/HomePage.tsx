@@ -32,9 +32,11 @@ export default function HomePage() {
             <div className="hidden md:block">
               <div className="bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl p-1">
                 <img
-                  src="https://images.pexels.com/photos/416405/pexels-photo-416405.jpeg"
+                  src="/images/header.webp"
                   alt="Industrial minerals and chemicals"
                   className="w-full h-96 object-cover rounded-xl"
+                  width="600"
+                  height="384"
                 />
               </div>
             </div>

@@ -31,12 +31,18 @@ export default function Navigation({ currentPage, setCurrentPage }: NavigationPr
           {/* Logo */}
           <div
             onClick={() => handleNavClick('home')}
-            className="cursor-pointer"
+            className="cursor-pointer flex items-center space-x-3"
           >
-            <h1 className="text-xl font-bold text-gray-900">
-              MEHI<span className="text-blue-600">.</span>
-            </h1>
-            <p className="text-xs text-gray-600">Worldwide Trading</p>
+            <img
+              src="/mehi-logo-transparent.png"
+              alt="MEHI Worldwide Trading"
+              className="h-10 w-auto object-contain"
+              width="120"
+              height="40"
+            />
+            <div className="hidden sm:block">
+              <p className="text-xs text-gray-600 leading-tight">Worldwide Trading</p>
+            </div>
           </div>
 
           {/* Desktop Menu */}

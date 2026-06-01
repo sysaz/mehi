@@ -1,24 +1,8 @@
 import { Layers } from 'lucide-react';
+import ProductShowcase from '../components/ProductShowcase';
+import { products } from '../data/products';
 
 export default function ProductsPage() {
-  const minerals = [
-    { name: 'Talc', description: 'Premium grade talc for cosmetics, food, and industrial applications' },
-    { name: 'Kaolin', description: 'High-purity kaolin for ceramics, paint, and paper industries' },
-    { name: 'Calcined Kaolin', description: 'Thermally processed kaolin for advanced applications' },
-    { name: 'Calcium Carbonate', description: 'Ground and precipitated calcium carbonate for multiple uses' },
-    { name: 'Feldpars', description: 'Industrial-grade feldspars for ceramics and glass production' },
-    { name: 'Dolomite', description: 'Crushed and powdered dolomite for construction and refractories' },
-    { name: 'Quartz', description: 'High-purity quartz for glass and semiconductor applications' },
-    { name: 'Hydrated Lime', description: 'Fresh hydrated lime for construction and water treatment' },
-    { name: 'Quick Lime', description: 'Reactive quick lime for industrial processes' },
-    { name: 'PVD Salt', description: 'Pure vacuum dried salt for pharmaceutical and food use' },
-    { name: 'Sodium Chloride', description: 'Industrial-grade sodium chloride for chemical production' },
-    { name: 'Ball Clay Powder', description: 'Plastic clay powder for ceramics and refractory applications' },
-    { name: 'Bauxite', description: 'Raw bauxite ore for alumina and refractory production' },
-    { name: 'China Clay', description: 'Fine china clay for paper coating and ceramics' },
-    { name: 'Bentonite', description: 'Activated bentonite for drilling, sealing, and purification' },
-  ];
-
   const chemicals = [
     {
       category: 'Dow Chemicals',
@@ -36,7 +20,7 @@ export default function ProductsPage() {
 
   return (
     <div>
-      {/* Hero Section */}
+      {/* Hero Section — navy header band, kept untouched */}
       <section className="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl font-bold mb-4">Our Products</h1>
@@ -46,29 +30,18 @@ export default function ProductsPage() {
         </div>
       </section>
 
-      {/* Minerals Section */}
+      {/* Product Showcase — replaces plain text minerals grid */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center space-x-3 mb-12">
+          <div className="flex items-center space-x-3 mb-8">
             <Layers className="text-blue-600" size={32} />
-            <h2 className="text-4xl font-bold text-gray-900">Minerals</h2>
+            <h2 className="text-4xl font-bold text-gray-900">Minerals &amp; Chemicals</h2>
           </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {minerals.map((mineral, index) => (
-              <div
-                key={index}
-                className="bg-white border border-gray-200 p-6 rounded-xl hover:shadow-lg transition-shadow hover:border-blue-300"
-              >
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">{mineral.name}</h3>
-                <p className="text-gray-700 text-sm leading-relaxed">{mineral.description}</p>
-              </div>
-            ))}
-          </div>
+          <ProductShowcase products={products} />
         </div>
       </section>
 
-      {/* Chemicals Section */}
+      {/* Specialty Chemicals Section — kept exactly as original */}
       <section className="bg-gray-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center space-x-3 mb-12">

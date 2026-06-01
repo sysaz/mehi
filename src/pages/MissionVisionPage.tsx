@@ -79,9 +79,12 @@ export default function MissionVisionPage() {
             </div>
             <div>
               <img
-                src="https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg"
+                src="/images/mission.webp"
                 alt="Our mission"
-                className="rounded-xl shadow-lg"
+                className="rounded-xl shadow-lg w-full"
+                loading="lazy"
+                width="600"
+                height="450"
               />
             </div>
           </div>
@@ -94,9 +97,12 @@ export default function MissionVisionPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1">
               <img
-                src="https://images.pexels.com/photos/5632399/pexels-photo-5632399.jpeg"
+                src="/images/vision.webp"
                 alt="Our vision"
-                className="rounded-xl shadow-lg"
+                className="rounded-xl shadow-lg w-full"
+                loading="lazy"
+                width="600"
+                height="450"
               />
             </div>
             <div className="order-1 md:order-2">

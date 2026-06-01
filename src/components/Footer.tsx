@@ -9,11 +9,16 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-12 mb-12">
           {/* Company Info */}
           <div>
-            <h3 className="text-2xl font-bold mb-4">
-              MEHI<span className="text-blue-400">.</span>
-            </h3>
+            <img
+              src="/mehi-logo.png"
+              alt="MEHI Worldwide Trading"
+              className="h-14 w-auto object-contain mb-4"
+              width="160"
+              height="56"
+              loading="lazy"
+            />
             <p className="text-gray-400 text-sm leading-relaxed mb-4">
-              Worldwide Trading Private Limited - Global supplier of premium minerals and chemicals.
+              Worldwide Trading Private Limited — Global supplier of premium minerals and chemicals.
             </p>
             <p className="text-xs text-gray-500">
               CIN: U51909WB2021PTC249675
