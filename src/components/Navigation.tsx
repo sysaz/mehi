@@ -1,4 +1,4 @@
-import { Menu, X, MessageCircle } from 'lucide-react';
+﻿import { Menu, X, MessageCircle } from 'lucide-react';
 import { useState } from 'react';
 
 interface NavigationProps {
@@ -31,12 +31,15 @@ export default function Navigation({ currentPage, setCurrentPage }: NavigationPr
           {/* Logo */}
           <div
             onClick={() => handleNavClick('home')}
-            className="cursor-pointer"
+            className="cursor-pointer flex items-center space-x-3"
           >
-            <h1 className="text-xl font-bold text-gray-900">
-              MEHI<span className="text-blue-600">.</span>
-            </h1>
-            <p className="text-xs text-gray-600">Worldwide Trading</p>
+            <img
+              src="/mehi-logo-transparent.png"
+              alt="MEHI Worldwide Trading"
+              className="h-10 w-auto object-contain"
+              width="120"
+              height="40"
+            />
           </div>
 
           {/* Desktop Menu */}
@@ -47,8 +50,8 @@ export default function Navigation({ currentPage, setCurrentPage }: NavigationPr
                 onClick={() => handleNavClick(item.key)}
                 className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
                   currentPage === item.key
-                    ? 'bg-blue-50 text-blue-600'
-                    : 'text-gray-700 hover:bg-gray-50'
+                    ? 'bg-brand-navy-light text-brand-navy'
+                    : 'text-brand-gray hover:bg-gray-50'
                 }`}
               >
                 {item.label}
@@ -86,8 +89,8 @@ export default function Navigation({ currentPage, setCurrentPage }: NavigationPr
                 onClick={() => handleNavClick(item.key)}
                 className={`block w-full text-left px-4 py-3 rounded-lg font-medium transition-colors ${
                   currentPage === item.key
-                    ? 'bg-blue-50 text-blue-600'
-                    : 'text-gray-700 hover:bg-gray-50'
+                    ? 'bg-brand-navy-light text-brand-navy'
+                    : 'text-brand-gray hover:bg-gray-50'
                 }`}
               >
                 {item.label}

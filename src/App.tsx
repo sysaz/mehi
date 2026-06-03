@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
@@ -13,6 +13,10 @@ type Page = 'home' | 'about' | 'products' | 'industries' | 'clients' | 'mission'
 
 function App() {
   const [currentPage, setCurrentPage] = useState<Page>('home');
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'instant' });
+  }, [currentPage]);
 
   const renderPage = () => {
     switch(currentPage) {
