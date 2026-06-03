@@ -1,4 +1,4 @@
-import { Factory } from 'lucide-react';
+﻿import { Factory } from 'lucide-react';
 
 export default function IndustriesPage() {
   const industries = [
@@ -82,7 +82,7 @@ export default function IndustriesPage() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-16">
+      <section className="bg-gradient-to-br from-brand-navy to-brand-navy-dark text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl font-bold mb-4">Industries We Serve</h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
@@ -98,16 +98,16 @@ export default function IndustriesPage() {
             {industries.map((industry, index) => (
               <div
                 key={index}
-                className="bg-white border border-gray-200 p-8 rounded-xl hover:shadow-lg hover:border-blue-300 transition-all"
+                className="bg-white border border-gray-200 p-8 rounded-xl hover:shadow-lg hover:border-[#84A0C3] transition-all"
               >
                 <div className="flex items-start space-x-4 mb-4">
-                  <div className="bg-blue-100 p-3 rounded-lg">
-                    <Factory className="text-blue-600" size={24} />
+                  <div className="bg-brand-navy-mid p-3 rounded-lg">
+                    <Factory className="text-brand-navy" size={24} />
                   </div>
                   <h3 className="text-2xl font-semibold text-gray-900">{industry.name}</h3>
                 </div>
 
-                <p className="text-gray-700 mb-4 text-sm leading-relaxed">
+                <p className="text-brand-gray mb-4 text-sm leading-relaxed">
                   {industry.description}
                 </p>
 
@@ -119,7 +119,7 @@ export default function IndustriesPage() {
                     {industry.products.map((product, idx) => (
                       <span
                         key={idx}
-                        className="bg-blue-50 text-blue-700 text-xs font-medium px-3 py-1 rounded-full border border-blue-200"
+                        className="bg-brand-navy-light text-brand-navy-dark text-xs font-medium px-3 py-1 rounded-full border border-[#ADBFD9]"
                       >
                         {product}
                       </span>
@@ -133,39 +133,39 @@ export default function IndustriesPage() {
       </section>
 
       {/* Summary Section */}
-      <section className="bg-gradient-to-r from-blue-50 to-blue-100 py-16 border-y border-blue-200">
+      <section className="bg-gradient-to-r from-brand-navy-light to-brand-navy-mid py-16 border-y border-[#ADBFD9]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-8 text-center">
             <div>
-              <p className="text-4xl font-bold text-blue-600 mb-2">15+</p>
-              <p className="text-gray-700 font-semibold">Industries Served</p>
+              <p className="text-4xl font-bold text-brand-navy mb-2">15+</p>
+              <p className="text-brand-gray font-semibold">Industries Served</p>
             </div>
             <div>
-              <p className="text-4xl font-bold text-blue-600 mb-2">25+</p>
-              <p className="text-gray-700 font-semibold">Product Solutions</p>
+              <p className="text-4xl font-bold text-brand-navy mb-2">25+</p>
+              <p className="text-brand-gray font-semibold">Product Solutions</p>
             </div>
             <div>
-              <p className="text-4xl font-bold text-blue-600 mb-2">100+</p>
-              <p className="text-gray-700 font-semibold">Industry Applications</p>
+              <p className="text-4xl font-bold text-brand-navy mb-2">100+</p>
+              <p className="text-brand-gray font-semibold">Industry Applications</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="bg-blue-600 text-white py-16">
+      <section className="bg-brand-navy text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold mb-6">
             Can't find your industry?
           </h2>
-          <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-brand-navy-mid mb-8 max-w-2xl mx-auto">
             Our team can help identify the right products for your specific needs. Reach out today.
           </p>
           <a
             href="https://wa.me/919830261334"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+            className="inline-block bg-white text-brand-navy px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
           >
             Consult Our Experts
           </a>

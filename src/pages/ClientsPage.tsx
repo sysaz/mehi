@@ -1,4 +1,4 @@
-import { Building2, Globe, TrendingUp } from 'lucide-react';
+﻿import { Building2, Globe, TrendingUp } from 'lucide-react';
 
 export default function ClientsPage() {
   const clients = [
@@ -37,7 +37,7 @@ export default function ClientsPage() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-16">
+      <section className="bg-gradient-to-br from-brand-navy to-brand-navy-dark text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl font-bold mb-4">Our Valued Clients</h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
@@ -47,20 +47,20 @@ export default function ClientsPage() {
       </section>
 
       {/* Client Stats */}
-      <section className="bg-blue-50 py-12 border-b border-blue-200">
+      <section className="bg-brand-navy-light py-12 border-b border-[#ADBFD9]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-8 text-center">
             <div>
-              <p className="text-4xl font-bold text-blue-600 mb-2">5</p>
-              <p className="text-gray-700 font-semibold">Key Clients</p>
+              <p className="text-4xl font-bold text-brand-navy mb-2">5</p>
+              <p className="text-brand-gray font-semibold">Key Clients</p>
             </div>
             <div>
-              <p className="text-4xl font-bold text-blue-600 mb-2">3</p>
-              <p className="text-gray-700 font-semibold">Countries</p>
+              <p className="text-4xl font-bold text-brand-navy mb-2">3</p>
+              <p className="text-brand-gray font-semibold">Countries</p>
             </div>
             <div>
-              <p className="text-4xl font-bold text-blue-600 mb-2">4</p>
-              <p className="text-gray-700 font-semibold">Industries</p>
+              <p className="text-4xl font-bold text-brand-navy mb-2">4</p>
+              <p className="text-brand-gray font-semibold">Industries</p>
             </div>
           </div>
         </div>
@@ -73,7 +73,7 @@ export default function ClientsPage() {
             {clients.map((client, index) => (
               <div
                 key={index}
-                className="group bg-white rounded-xl overflow-hidden border border-gray-200 hover:shadow-xl hover:border-blue-300 transition-all duration-300"
+                className="group bg-white rounded-xl overflow-hidden border border-gray-200 hover:shadow-xl hover:border-[#84A0C3] transition-all duration-300"
               >
                 {/* Client Image */}
                 <div className="h-48 overflow-hidden bg-gray-200">
@@ -90,12 +90,12 @@ export default function ClientsPage() {
 
                   <div className="space-y-3 mb-4">
                     <div className="flex items-center space-x-2">
-                      <Globe className="text-blue-600 flex-shrink-0" size={18} />
-                      <span className="text-gray-700 font-medium">{client.country}</span>
+                      <Globe className="text-brand-navy flex-shrink-0" size={18} />
+                      <span className="text-brand-gray font-medium">{client.country}</span>
                     </div>
                     <div className="flex items-center space-x-2">
-                      <Building2 className="text-blue-600 flex-shrink-0" size={18} />
-                      <span className="text-gray-700 text-sm">{client.industry}</span>
+                      <Building2 className="text-brand-navy flex-shrink-0" size={18} />
+                      <span className="text-brand-gray text-sm">{client.industry}</span>
                     </div>
                   </div>
 
@@ -121,24 +121,24 @@ export default function ClientsPage() {
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white p-8 rounded-xl border border-gray-200 text-center">
-              <div className="text-4xl font-bold text-blue-600 mb-3">100%</div>
-              <p className="text-gray-700 font-semibold">Quality Commitment</p>
+              <div className="text-4xl font-bold text-brand-navy mb-3">100%</div>
+              <p className="text-brand-gray font-semibold">Quality Commitment</p>
               <p className="text-gray-600 text-sm mt-2">
                 Consistent premium-grade products meeting international standards
               </p>
             </div>
 
             <div className="bg-white p-8 rounded-xl border border-gray-200 text-center">
-              <div className="text-4xl font-bold text-blue-600 mb-3">Fast</div>
-              <p className="text-gray-700 font-semibold">Reliable Delivery</p>
+              <div className="text-4xl font-bold text-brand-navy mb-3">Fast</div>
+              <p className="text-brand-gray font-semibold">Reliable Delivery</p>
               <p className="text-gray-600 text-sm mt-2">
                 On-time shipments with efficient logistics across regions
               </p>
             </div>
 
             <div className="bg-white p-8 rounded-xl border border-gray-200 text-center">
-              <div className="text-4xl font-bold text-blue-600 mb-3">Expert</div>
-              <p className="text-gray-700 font-semibold">Support Team</p>
+              <div className="text-4xl font-bold text-brand-navy mb-3">Expert</div>
+              <p className="text-brand-gray font-semibold">Support Team</p>
               <p className="text-gray-600 text-sm mt-2">
                 Dedicated professionals with deep industry knowledge
               </p>
@@ -150,9 +150,9 @@ export default function ClientsPage() {
       {/* Partnership Section */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white rounded-2xl p-12 text-center">
+          <div className="bg-gradient-to-r from-brand-navy to-brand-navy-dark text-white rounded-2xl p-12 text-center">
             <h2 className="text-4xl font-bold mb-4">Ready to Partner With Us?</h2>
-            <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+            <p className="text-xl text-brand-navy-mid mb-8 max-w-2xl mx-auto">
               Join our network of satisfied clients and experience the MEHI difference
             </p>
 
@@ -161,11 +161,11 @@ export default function ClientsPage() {
                 href="https://wa.me/919830261334"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+                className="inline-block bg-white text-brand-navy px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
               >
                 Start Partnership
               </a>
-              <button className="inline-block border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors">
+              <button className="inline-block border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-brand-navy transition-colors">
                 Request Samples
               </button>
             </div>
@@ -184,7 +184,7 @@ export default function ClientsPage() {
             <div className="bg-white p-8 rounded-xl text-center border border-gray-200 hover:shadow-lg transition-shadow">
               <div className="text-3xl mb-4">🇮🇳</div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">India</h3>
-              <p className="text-gray-700 text-sm">
+              <p className="text-brand-gray text-sm">
                 Corporate headquarters in Kharagpur with registered office in Kolkata
               </p>
             </div>
@@ -192,7 +192,7 @@ export default function ClientsPage() {
             <div className="bg-white p-8 rounded-xl text-center border border-gray-200 hover:shadow-lg transition-shadow">
               <div className="text-3xl mb-4">🇧🇩</div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Bangladesh</h3>
-              <p className="text-gray-700 text-sm">
+              <p className="text-brand-gray text-sm">
                 Serving leading coatings and industrial manufacturers
               </p>
             </div>
@@ -200,7 +200,7 @@ export default function ClientsPage() {
             <div className="bg-white p-8 rounded-xl text-center border border-gray-200 hover:shadow-lg transition-shadow">
               <div className="text-3xl mb-4">🇱🇰</div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Sri Lanka</h3>
-              <p className="text-gray-700 text-sm">
+              <p className="text-brand-gray text-sm">
                 Supporting ceramics, tiles, and multi-industry clients
               </p>
             </div>

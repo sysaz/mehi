@@ -1,4 +1,4 @@
-import { CheckCircle, Beaker, Gauge, Leaf, BarChart3, Users } from 'lucide-react';
+﻿import { CheckCircle, Beaker, Gauge, Leaf, BarChart3, Users } from 'lucide-react';
 
 export default function QualityPage() {
   const qualityFeatures = [
@@ -64,7 +64,7 @@ export default function QualityPage() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-16">
+      <section className="bg-gradient-to-br from-brand-navy to-brand-navy-dark text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl font-bold mb-4">Quality Commitment</h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
@@ -79,28 +79,28 @@ export default function QualityPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-4xl font-bold mb-6 text-gray-900">Our Quality Philosophy</h2>
-              <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              <p className="text-lg text-brand-gray leading-relaxed mb-6">
                 At MEHI, quality is not just a requirement—it's our promise to every client. We believe that delivering superior products is essential for the success of our partners and the industries they serve.
               </p>
-              <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              <p className="text-lg text-brand-gray leading-relaxed mb-6">
                 Our approach to quality encompasses:
               </p>
               <ul className="space-y-3">
                 <li className="flex items-start space-x-3">
-                  <CheckCircle className="text-blue-600 flex-shrink-0 mt-1" size={20} />
-                  <span className="text-gray-700">Rigorous testing at every production stage</span>
+                  <CheckCircle className="text-brand-navy flex-shrink-0 mt-1" size={20} />
+                  <span className="text-brand-gray">Rigorous testing at every production stage</span>
                 </li>
                 <li className="flex items-start space-x-3">
-                  <CheckCircle className="text-blue-600 flex-shrink-0 mt-1" size={20} />
-                  <span className="text-gray-700">Strict adherence to international standards</span>
+                  <CheckCircle className="text-brand-navy flex-shrink-0 mt-1" size={20} />
+                  <span className="text-brand-gray">Strict adherence to international standards</span>
                 </li>
                 <li className="flex items-start space-x-3">
-                  <CheckCircle className="text-blue-600 flex-shrink-0 mt-1" size={20} />
-                  <span className="text-gray-700">Continuous improvement and innovation</span>
+                  <CheckCircle className="text-brand-navy flex-shrink-0 mt-1" size={20} />
+                  <span className="text-brand-gray">Continuous improvement and innovation</span>
                 </li>
                 <li className="flex items-start space-x-3">
-                  <CheckCircle className="text-blue-600 flex-shrink-0 mt-1" size={20} />
-                  <span className="text-gray-700">Complete transparency with clients</span>
+                  <CheckCircle className="text-brand-navy flex-shrink-0 mt-1" size={20} />
+                  <span className="text-brand-gray">Complete transparency with clients</span>
                 </li>
               </ul>
             </div>
@@ -128,13 +128,13 @@ export default function QualityPage() {
               return (
                 <div
                   key={index}
-                  className="bg-white p-8 rounded-xl border border-gray-200 hover:shadow-lg hover:border-blue-300 transition-all"
+                  className="bg-white p-8 rounded-xl border border-gray-200 hover:shadow-lg hover:border-[#84A0C3] transition-all"
                 >
-                  <div className="bg-blue-100 inline-block p-3 rounded-lg mb-4">
-                    <IconComponent className="text-blue-600" size={28} />
+                  <div className="bg-brand-navy-mid inline-block p-3 rounded-lg mb-4">
+                    <IconComponent className="text-brand-navy" size={28} />
                   </div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">{feature.title}</h3>
-                  <p className="text-gray-700 text-sm leading-relaxed">{feature.description}</p>
+                  <p className="text-brand-gray text-sm leading-relaxed">{feature.description}</p>
                 </div>
               );
             })}
@@ -153,16 +153,16 @@ export default function QualityPage() {
             {standards.map((standard, index) => (
               <div
                 key={index}
-                className="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-xl border border-blue-200 text-center"
+                className="bg-gradient-to-br from-brand-navy-light to-brand-navy-mid p-8 rounded-xl border border-[#ADBFD9] text-center"
               >
                 <h3 className="text-xl font-semibold text-gray-900 mb-6">{standard.category}</h3>
                 <ul className="space-y-3">
                   {standard.items.map((item, idx) => (
                     <li
                       key={idx}
-                      className="flex items-center space-x-3 text-gray-700 text-sm"
+                      className="flex items-center space-x-3 text-brand-gray text-sm"
                     >
-                      <CheckCircle className="text-blue-600 flex-shrink-0" size={18} />
+                      <CheckCircle className="text-brand-navy flex-shrink-0" size={18} />
                       <span>{item}</span>
                     </li>
                   ))}
@@ -183,60 +183,60 @@ export default function QualityPage() {
           <div className="max-w-4xl mx-auto">
             <div className="space-y-4">
               <div className="flex items-start space-x-6">
-                <div className="bg-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0 text-lg font-bold">
+                <div className="bg-brand-navy text-white rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0 text-lg font-bold">
                   1
                 </div>
                 <div className="pt-1">
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">Raw Material Inspection</h3>
-                  <p className="text-gray-700">
+                  <p className="text-brand-gray">
                     All incoming raw materials are tested for purity and composition before acceptance
                   </p>
                 </div>
               </div>
 
               <div className="flex items-start space-x-6">
-                <div className="bg-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0 text-lg font-bold">
+                <div className="bg-brand-navy text-white rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0 text-lg font-bold">
                   2
                 </div>
                 <div className="pt-1">
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">In-Process Testing</h3>
-                  <p className="text-gray-700">
+                  <p className="text-brand-gray">
                     Multiple quality checks are performed during manufacturing to ensure consistency
                   </p>
                 </div>
               </div>
 
               <div className="flex items-start space-x-6">
-                <div className="bg-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0 text-lg font-bold">
+                <div className="bg-brand-navy text-white rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0 text-lg font-bold">
                   3
                 </div>
                 <div className="pt-1">
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">Final Product Analysis</h3>
-                  <p className="text-gray-700">
+                  <p className="text-brand-gray">
                     Finished products undergo comprehensive laboratory analysis for all quality parameters
                   </p>
                 </div>
               </div>
 
               <div className="flex items-start space-x-6">
-                <div className="bg-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0 text-lg font-bold">
+                <div className="bg-brand-navy text-white rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0 text-lg font-bold">
                   4
                 </div>
                 <div className="pt-1">
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">Documentation & Certification</h3>
-                  <p className="text-gray-700">
+                  <p className="text-brand-gray">
                     Complete test reports and certificates are provided with every shipment
                   </p>
                 </div>
               </div>
 
               <div className="flex items-start space-x-6">
-                <div className="bg-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0 text-lg font-bold">
+                <div className="bg-brand-navy text-white rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0 text-lg font-bold">
                   5
                 </div>
                 <div className="pt-1">
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">Post-Delivery Support</h3>
-                  <p className="text-gray-700">
+                  <p className="text-brand-gray">
                     We provide ongoing support and address any quality concerns promptly and professionally
                   </p>
                 </div>
@@ -247,26 +247,26 @@ export default function QualityPage() {
       </section>
 
       {/* Quality Commitment */}
-      <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16">
+      <section className="bg-gradient-to-r from-brand-navy to-brand-navy-dark text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-4xl font-bold mb-6">Our Quality Guarantee</h2>
-            <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+            <p className="text-xl text-brand-navy-mid mb-8 max-w-2xl mx-auto">
               We stand behind every product we deliver. If quality standards are not met, we will work with you to resolve the issue immediately.
             </p>
 
             <div className="grid md:grid-cols-3 gap-8 mt-12">
               <div className="bg-white bg-opacity-10 rounded-lg p-6 backdrop-blur-sm">
                 <p className="text-4xl font-bold mb-2">100%</p>
-                <p className="text-blue-100">Quality Assurance</p>
+                <p className="text-brand-navy-mid">Quality Assurance</p>
               </div>
               <div className="bg-white bg-opacity-10 rounded-lg p-6 backdrop-blur-sm">
                 <p className="text-4xl font-bold mb-2">24/7</p>
-                <p className="text-blue-100">Customer Support</p>
+                <p className="text-brand-navy-mid">Customer Support</p>
               </div>
               <div className="bg-white bg-opacity-10 rounded-lg p-6 backdrop-blur-sm">
                 <p className="text-4xl font-bold mb-2">0</p>
-                <p className="text-blue-100">Defect Tolerance</p>
+                <p className="text-brand-navy-mid">Defect Tolerance</p>
               </div>
             </div>
           </div>
@@ -279,14 +279,14 @@ export default function QualityPage() {
           <h2 className="text-4xl font-bold mb-6 text-gray-900">
             Experience Quality Excellence
           </h2>
-          <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-brand-gray mb-8 max-w-2xl mx-auto">
             Request samples or learn more about our quality standards and certifications
           </p>
           <a
             href="https://wa.me/919830261334"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+            className="inline-block bg-brand-navy text-white px-8 py-3 rounded-lg font-semibold hover:bg-brand-navy-dark transition-colors"
           >
             Contact Quality Team
           </a>

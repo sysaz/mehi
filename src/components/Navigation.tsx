@@ -1,4 +1,4 @@
-import { Menu, X, MessageCircle } from 'lucide-react';
+﻿import { Menu, X, MessageCircle } from 'lucide-react';
 import { useState } from 'react';
 
 interface NavigationProps {
@@ -50,8 +50,8 @@ export default function Navigation({ currentPage, setCurrentPage }: NavigationPr
                 onClick={() => handleNavClick(item.key)}
                 className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
                   currentPage === item.key
-                    ? 'bg-blue-50 text-blue-600'
-                    : 'text-gray-700 hover:bg-gray-50'
+                    ? 'bg-brand-navy-light text-brand-navy'
+                    : 'text-brand-gray hover:bg-gray-50'
                 }`}
               >
                 {item.label}
@@ -89,8 +89,8 @@ export default function Navigation({ currentPage, setCurrentPage }: NavigationPr
                 onClick={() => handleNavClick(item.key)}
                 className={`block w-full text-left px-4 py-3 rounded-lg font-medium transition-colors ${
                   currentPage === item.key
-                    ? 'bg-blue-50 text-blue-600'
-                    : 'text-gray-700 hover:bg-gray-50'
+                    ? 'bg-brand-navy-light text-brand-navy'
+                    : 'text-brand-gray hover:bg-gray-50'
                 }`}
               >
                 {item.label}

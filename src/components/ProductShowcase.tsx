@@ -1,4 +1,4 @@
-import { useState } from 'react';
+﻿import { useState } from 'react';
 import { X, FlaskConical } from 'lucide-react';
 import type { Product } from '../data/products';
 
@@ -36,8 +36,8 @@ export default function ProductShowcase({ products }: ProductShowcaseProps) {
             onClick={() => setFilter(f.key)}
             className={`px-5 py-2 rounded-full text-sm font-medium transition-colors ${
               filter === f.key
-                ? 'bg-blue-600 text-white shadow-sm'
-                : 'bg-white text-gray-700 border border-gray-300 hover:border-blue-400 hover:text-blue-600'
+                ? 'bg-brand-navy text-white shadow-sm'
+                : 'bg-white text-brand-gray border border-gray-300 hover:border-[#5B82AD] hover:text-brand-navy'
             }`}
           >
             {f.label}
@@ -54,7 +54,7 @@ export default function ProductShowcase({ products }: ProductShowcaseProps) {
           <button
             key={product.id}
             onClick={() => setSelected(product)}
-            className="group relative aspect-square overflow-hidden rounded-xl shadow-md hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-shadow"
+            className="group relative aspect-square overflow-hidden rounded-xl shadow-md hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-brand-navy focus:ring-offset-2 transition-shadow"
           >
             <img
               src={product.image}
@@ -75,7 +75,7 @@ export default function ProductShowcase({ products }: ProductShowcaseProps) {
                 <p className="text-white text-sm font-semibold leading-tight">
                   {product.name}
                 </p>
-                <p className="text-blue-200 text-xs mt-0.5">Click for details</p>
+                <p className="text-[#ADBFD9] text-xs mt-0.5">Click for details</p>
               </div>
             </div>
           </button>
@@ -107,7 +107,7 @@ export default function ProductShowcase({ products }: ProductShowcaseProps) {
               />
               <button
                 onClick={() => setSelected(null)}
-                className="absolute top-3 right-3 bg-white/90 hover:bg-white rounded-full p-1.5 text-gray-700 shadow-md transition-colors"
+                className="absolute top-3 right-3 bg-white/90 hover:bg-white rounded-full p-1.5 text-brand-gray shadow-md transition-colors"
                 aria-label="Close"
               >
                 <X size={18} />
@@ -122,7 +122,7 @@ export default function ProductShowcase({ products }: ProductShowcaseProps) {
                   {selected.name}
                 </h2>
                 {selected.formula && (
-                  <span className="inline-flex items-center gap-1 bg-blue-50 text-blue-700 text-xs font-mono px-2.5 py-1 rounded-full border border-blue-200 flex-shrink-0 mt-1">
+                  <span className="inline-flex items-center gap-1 bg-brand-navy-light text-brand-navy-dark text-xs font-mono px-2.5 py-1 rounded-full border border-[#ADBFD9] flex-shrink-0 mt-1">
                     <FlaskConical size={11} />
                     {selected.formula}
                   </span>
@@ -130,7 +130,7 @@ export default function ProductShowcase({ products }: ProductShowcaseProps) {
               </div>
 
               {/* Description */}
-              <p className="text-gray-700 text-sm leading-relaxed">
+              <p className="text-brand-gray text-sm leading-relaxed">
                 {selected.description}
               </p>
 
@@ -161,7 +161,7 @@ export default function ProductShowcase({ products }: ProductShowcaseProps) {
                   </p>
                   <ul className="list-disc list-inside space-y-0.5">
                     {selected.grades.map((grade) => (
-                      <li key={grade} className="text-gray-700 text-sm">
+                      <li key={grade} className="text-brand-gray text-sm">
                         {grade}
                       </li>
                     ))}
@@ -179,7 +179,7 @@ export default function ProductShowcase({ products }: ProductShowcaseProps) {
                     {selected.packaging.map((pkg) => (
                       <span
                         key={pkg}
-                        className="bg-blue-50 text-blue-700 text-xs px-2.5 py-1 rounded-full border border-blue-100"
+                        className="bg-brand-navy-light text-brand-navy-dark text-xs px-2.5 py-1 rounded-full border border-brand-navy-mid"
                       >
                         {pkg}
                       </span>
@@ -193,7 +193,7 @@ export default function ProductShowcase({ products }: ProductShowcaseProps) {
                 href={waLink(selected.name)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block w-full text-center bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-xl transition-colors"
+                className="block w-full text-center bg-brand-navy hover:bg-brand-navy-dark text-white font-semibold py-3 px-6 rounded-xl transition-colors"
               >
                 Request a Quote
               </a>

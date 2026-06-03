@@ -1,4 +1,4 @@
-import { Target, Lightbulb, Award, Users, Zap, Globe } from 'lucide-react';
+﻿import { Target, Lightbulb, Award, Users, Zap, Globe } from 'lucide-react';
 import BlurImage from '../components/BlurImage';
 
 const MISSION_PLACEHOLDER = "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAADwAwCdASoUAA0APzmEuVOvKKWisAgB4CcJYwCdABuUmwmvbCMQ1d68APYEvGbqAQ9RiNQnANZGJIpWPEpeTJ7BMQf4USsI+NrGjxXfiNST7Rq1p0QtZpgMiQJdU0g9sD552XnnT0OKoeKUa+YAAA==";
@@ -41,7 +41,7 @@ export default function MissionVisionPage() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-16">
+      <section className="bg-gradient-to-br from-brand-navy to-brand-navy-dark text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl font-bold mb-4">Mission & Vision</h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
@@ -56,28 +56,28 @@ export default function MissionVisionPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-4xl font-bold mb-6 text-gray-900">Our Mission</h2>
-              <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              <p className="text-lg text-brand-gray leading-relaxed mb-6">
                 To be the trusted global supplier of premium minerals and chemicals, delivering exceptional quality and reliable service to diverse industries across South Asia and beyond.
               </p>
-              <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              <p className="text-lg text-brand-gray leading-relaxed mb-6">
                 We are committed to:
               </p>
               <ul className="space-y-3">
                 <li className="flex items-start space-x-3">
-                  <span className="text-blue-600 text-2xl leading-none">•</span>
-                  <span className="text-gray-700">Providing consistent, high-quality products that meet international standards</span>
+                  <span className="text-brand-navy text-2xl leading-none">•</span>
+                  <span className="text-brand-gray">Providing consistent, high-quality products that meet international standards</span>
                 </li>
                 <li className="flex items-start space-x-3">
-                  <span className="text-blue-600 text-2xl leading-none">•</span>
-                  <span className="text-gray-700">Building long-term partnerships based on trust and mutual growth</span>
+                  <span className="text-brand-navy text-2xl leading-none">•</span>
+                  <span className="text-brand-gray">Building long-term partnerships based on trust and mutual growth</span>
                 </li>
                 <li className="flex items-start space-x-3">
-                  <span className="text-blue-600 text-2xl leading-none">•</span>
-                  <span className="text-gray-700">Maintaining efficient supply chains and timely deliveries</span>
+                  <span className="text-brand-navy text-2xl leading-none">•</span>
+                  <span className="text-brand-gray">Maintaining efficient supply chains and timely deliveries</span>
                 </li>
                 <li className="flex items-start space-x-3">
-                  <span className="text-blue-600 text-2xl leading-none">•</span>
-                  <span className="text-gray-700">Supporting sustainable and responsible business practices</span>
+                  <span className="text-brand-navy text-2xl leading-none">•</span>
+                  <span className="text-brand-gray">Supporting sustainable and responsible business practices</span>
                 </li>
               </ul>
             </div>
@@ -111,28 +111,28 @@ export default function MissionVisionPage() {
             </div>
             <div className="order-1 md:order-2">
               <h2 className="text-4xl font-bold mb-6 text-gray-900">Our Vision</h2>
-              <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              <p className="text-lg text-brand-gray leading-relaxed mb-6">
                 To become the preferred choice for minerals and chemicals in the South Asian market, recognized for exceptional quality, innovation, and customer service.
               </p>
-              <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              <p className="text-lg text-brand-gray leading-relaxed mb-6">
                 We envision:
               </p>
               <ul className="space-y-3">
                 <li className="flex items-start space-x-3">
-                  <span className="text-blue-600 text-2xl leading-none">•</span>
-                  <span className="text-gray-700">Expanding our product range to serve emerging industrial needs</span>
+                  <span className="text-brand-navy text-2xl leading-none">•</span>
+                  <span className="text-brand-gray">Expanding our product range to serve emerging industrial needs</span>
                 </li>
                 <li className="flex items-start space-x-3">
-                  <span className="text-blue-600 text-2xl leading-none">•</span>
-                  <span className="text-gray-700">Growing our market presence across multiple countries</span>
+                  <span className="text-brand-navy text-2xl leading-none">•</span>
+                  <span className="text-brand-gray">Growing our market presence across multiple countries</span>
                 </li>
                 <li className="flex items-start space-x-3">
-                  <span className="text-blue-600 text-2xl leading-none">•</span>
-                  <span className="text-gray-700">Investing in technology and infrastructure for better service</span>
+                  <span className="text-brand-navy text-2xl leading-none">•</span>
+                  <span className="text-brand-gray">Investing in technology and infrastructure for better service</span>
                 </li>
                 <li className="flex items-start space-x-3">
-                  <span className="text-blue-600 text-2xl leading-none">•</span>
-                  <span className="text-gray-700">Contributing positively to industries and communities we serve</span>
+                  <span className="text-brand-navy text-2xl leading-none">•</span>
+                  <span className="text-brand-gray">Contributing positively to industries and communities we serve</span>
                 </li>
               </ul>
             </div>
@@ -151,13 +151,13 @@ export default function MissionVisionPage() {
               return (
                 <div
                   key={index}
-                  className="bg-white border border-gray-200 p-8 rounded-xl hover:shadow-lg hover:border-blue-300 transition-all text-center"
+                  className="bg-white border border-gray-200 p-8 rounded-xl hover:shadow-lg hover:border-[#84A0C3] transition-all text-center"
                 >
-                  <div className="inline-block bg-blue-100 p-4 rounded-lg mb-4">
-                    <IconComponent className="text-blue-600" size={32} />
+                  <div className="inline-block bg-brand-navy-mid p-4 rounded-lg mb-4">
+                    <IconComponent className="text-brand-navy" size={32} />
                   </div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">{value.title}</h3>
-                  <p className="text-gray-700 text-sm leading-relaxed">
+                  <p className="text-brand-gray text-sm leading-relaxed">
                     {value.description}
                   </p>
                 </div>
@@ -168,51 +168,51 @@ export default function MissionVisionPage() {
       </section>
 
       {/* Future Goals */}
-      <section className="bg-gradient-to-r from-blue-50 to-blue-100 py-20 border-y border-blue-200">
+      <section className="bg-gradient-to-r from-brand-navy-light to-brand-navy-mid py-20 border-y border-[#ADBFD9]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">Strategic Goals</h2>
 
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white p-8 rounded-xl shadow-sm border border-blue-200">
+            <div className="bg-white p-8 rounded-xl shadow-sm border border-[#ADBFD9]">
               <h3 className="text-2xl font-semibold text-gray-900 mb-4">Short Term (1-2 Years)</h3>
               <ul className="space-y-3">
                 <li className="flex items-start space-x-3">
-                  <span className="text-blue-600 font-bold">✓</span>
-                  <span className="text-gray-700">Strengthen market presence in existing regions</span>
+                  <span className="text-brand-navy font-bold">✓</span>
+                  <span className="text-brand-gray">Strengthen market presence in existing regions</span>
                 </li>
                 <li className="flex items-start space-x-3">
-                  <span className="text-blue-600 font-bold">✓</span>
-                  <span className="text-gray-700">Expand product portfolio with specialized grades</span>
+                  <span className="text-brand-navy font-bold">✓</span>
+                  <span className="text-brand-gray">Expand product portfolio with specialized grades</span>
                 </li>
                 <li className="flex items-start space-x-3">
-                  <span className="text-blue-600 font-bold">✓</span>
-                  <span className="text-gray-700">Enhance customer support and technical services</span>
+                  <span className="text-brand-navy font-bold">✓</span>
+                  <span className="text-brand-gray">Enhance customer support and technical services</span>
                 </li>
                 <li className="flex items-start space-x-3">
-                  <span className="text-blue-600 font-bold">✓</span>
-                  <span className="text-gray-700">Improve operational efficiency and reduce costs</span>
+                  <span className="text-brand-navy font-bold">✓</span>
+                  <span className="text-brand-gray">Improve operational efficiency and reduce costs</span>
                 </li>
               </ul>
             </div>
 
-            <div className="bg-white p-8 rounded-xl shadow-sm border border-blue-200">
+            <div className="bg-white p-8 rounded-xl shadow-sm border border-[#ADBFD9]">
               <h3 className="text-2xl font-semibold text-gray-900 mb-4">Long Term (3-5 Years)</h3>
               <ul className="space-y-3">
                 <li className="flex items-start space-x-3">
-                  <span className="text-blue-600 font-bold">✓</span>
-                  <span className="text-gray-700">Become a household name in South Asian markets</span>
+                  <span className="text-brand-navy font-bold">✓</span>
+                  <span className="text-brand-gray">Become a household name in South Asian markets</span>
                 </li>
                 <li className="flex items-start space-x-3">
-                  <span className="text-blue-600 font-bold">✓</span>
-                  <span className="text-gray-700">Achieve ISO certifications and quality standards</span>
+                  <span className="text-brand-navy font-bold">✓</span>
+                  <span className="text-brand-gray">Achieve ISO certifications and quality standards</span>
                 </li>
                 <li className="flex items-start space-x-3">
-                  <span className="text-blue-600 font-bold">✓</span>
-                  <span className="text-gray-700">Expand into new markets and regions</span>
+                  <span className="text-brand-navy font-bold">✓</span>
+                  <span className="text-brand-gray">Expand into new markets and regions</span>
                 </li>
                 <li className="flex items-start space-x-3">
-                  <span className="text-blue-600 font-bold">✓</span>
-                  <span className="text-gray-700">Develop sustainable practices across all operations</span>
+                  <span className="text-brand-navy font-bold">✓</span>
+                  <span className="text-brand-gray">Develop sustainable practices across all operations</span>
                 </li>
               </ul>
             </div>
@@ -221,19 +221,19 @@ export default function MissionVisionPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-blue-600 text-white py-16">
+      <section className="bg-brand-navy text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold mb-6">
             Join Us on Our Journey
           </h2>
-          <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-brand-navy-mid mb-8 max-w-2xl mx-auto">
             Be part of our mission to deliver excellence in minerals and chemicals worldwide.
           </p>
           <a
             href="https://wa.me/919830261334"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+            className="inline-block bg-white text-brand-navy px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
           >
             Get in Touch
           </a>
