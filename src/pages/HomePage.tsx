@@ -7,7 +7,7 @@ export default function HomePage() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative text-white overflow-hidden" style={{ minHeight: '600px' }}>
+      <section className="relative text-white overflow-hidden" style={{ minHeight: '640px' }}>
         {/* Full-bleed background image */}
         <div className="absolute inset-0">
           <BlurImage
@@ -16,25 +16,54 @@ export default function HomePage() {
             className="w-full h-full object-cover object-center"
             placeholder={HEADER_PLACEHOLDER}
             width="1400"
-            height="600"
+            height="640"
             fetchPriority="high"
           />
           {/* Gradient overlay: solid navy on left, fades to transparent on right */}
-          <div className="absolute inset-0 bg-gradient-to-r from-brand-navy via-brand-navy/85 to-brand-navy/10" />
+          <div className="absolute inset-0 bg-gradient-to-r from-brand-navy via-brand-navy/88 to-brand-navy/10" />
+          {/* Bottom fade: hero bleeds into the next section */}
+          <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white via-white/60 to-transparent" />
         </div>
 
         {/* Content */}
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-          <div className="max-w-xl">
-            <p className="text-[#5B82AD] text-sm font-semibold uppercase tracking-widest mb-4">
-              Global Merchant Export Solutions
-            </p>
-            <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-4">
-              Connecting Indian Products to Global Markets
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+          {/* Logo + Company Name */}
+          <div className="flex items-center gap-4 mb-12">
+            <img
+              src="/mehi-logo.png"
+              alt="MEHI"
+              className="h-14 w-14 object-contain"
+              width="56"
+              height="56"
+              style={{ filter: 'brightness(0) invert(1)' }}
+            />
+            <div className="border-l border-white/40 pl-4">
+              <p className="text-white font-bold text-xl leading-tight tracking-widest uppercase">
+                MEHI
+              </p>
+              <p className="text-white/70 text-xs leading-tight tracking-wider uppercase">
+                Worldwide Trading Private Limited
+              </p>
+            </div>
+          </div>
+
+          {/* Headline */}
+          <div className="max-w-2xl">
+            <h1 className="font-bold uppercase leading-none mb-6">
+              <span className="block text-5xl md:text-6xl lg:text-7xl text-white">Delivering</span>
+              <span className="block text-5xl md:text-6xl lg:text-7xl text-white">Indian Products</span>
+              <span className="block text-5xl md:text-6xl lg:text-7xl text-white/50">To Global Markets</span>
             </h1>
-            <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-              MEHI Worldwide Trading Private Limited specializes in merchant exports, international sourcing, industrial products, chemicals, and global trade coordination with a focus on reliability, professionalism, and long-term partnerships.
+
+            {/* Divider */}
+            <div className="w-12 h-0.5 bg-white/60 mb-6" />
+
+            {/* Description */}
+            <p className="text-base text-gray-300 leading-relaxed max-w-lg mb-10">
+              We help businesses worldwide source high-quality products from India through reliable merchant export services, strategic sourcing solutions, and expert management of industrial minerals, specialty chemicals, and international trade operations.
             </p>
+
+            {/* Buttons */}
             <div className="flex flex-wrap gap-4">
               <a
                 href="https://wa.me/919830261334"

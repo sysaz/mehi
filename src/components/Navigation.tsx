@@ -31,15 +31,19 @@ export default function Navigation({ currentPage, setCurrentPage }: NavigationPr
           {/* Logo */}
           <div
             onClick={() => handleNavClick('home')}
-            className="cursor-pointer flex items-center space-x-3"
+            className="cursor-pointer flex items-center gap-3"
           >
             <img
-              src="/mehi-logo-transparent.png"
-              alt="MEHI Worldwide Trading"
-              className="h-10 w-auto object-contain"
-              width="120"
+              src="/mehi-logo.png"
+              alt="MEHI"
+              className="h-10 w-10 object-contain"
+              width="40"
               height="40"
             />
+            <div>
+              <p className="text-brand-navy font-bold text-base leading-tight tracking-wide">MEHI</p>
+              <p className="text-brand-gray text-[10px] leading-tight tracking-wider uppercase">Worldwide Trading Pvt. Ltd.</p>
+            </div>
           </div>
 
           {/* Desktop Menu */}
