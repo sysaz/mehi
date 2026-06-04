@@ -1,4 +1,4 @@
-﻿import { Building2, Users, Award, Briefcase } from 'lucide-react';
+﻿import { Building2, Users, Award, Briefcase, Phone, Mail, MessageCircle } from 'lucide-react';
 
 export default function AboutPage() {
   const directors = [
@@ -117,23 +117,37 @@ export default function AboutPage() {
       </section>
 
       {/* Contact Information */}
-      <section className="bg-brand-navy text-white py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold mb-8 text-center">Get in Touch</h2>
+      <section className="bg-brand-navy text-white py-20">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-4xl font-bold mb-3">Get in Touch</h2>
+          <p className="text-gray-400 mb-12">Reach us through any of the channels below — we respond promptly.</p>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            <div>
-              <p className="text-sm text-gray-400 mb-2">PHONE</p>
-              <a href="tel:+919830261334" className="text-xl font-semibold hover:text-[#5B82AD] transition-colors">
-                +91 98302 61334
-              </a>
-            </div>
-            <div>
-              <p className="text-sm text-gray-400 mb-2">EMAIL</p>
-              <a href="mailto:mehiwt@gmail.com" className="text-xl font-semibold hover:text-[#5B82AD] transition-colors">
-                mehiwt@gmail.com
-              </a>
-            </div>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="tel:+919830261334"
+              className="flex items-center justify-center gap-3 bg-white/10 hover:bg-white/20 border border-white/20 text-white px-8 py-4 rounded-xl font-semibold transition-colors"
+            >
+              <Phone size={20} />
+              <span>+91 98302 61334</span>
+            </a>
+
+            <a
+              href="mailto:mehiwt@gmail.com"
+              className="flex items-center justify-center gap-3 bg-white/10 hover:bg-white/20 border border-white/20 text-white px-8 py-4 rounded-xl font-semibold transition-colors"
+            >
+              <Mail size={20} />
+              <span>mehiwt@gmail.com</span>
+            </a>
+
+            <a
+              href="https://wa.me/919830261334"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-3 bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-xl font-semibold transition-colors"
+            >
+              <MessageCircle size={20} />
+              <span>WhatsApp</span>
+            </a>
           </div>
         </div>
       </section>

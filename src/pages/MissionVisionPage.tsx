@@ -57,7 +57,7 @@ export default function MissionVisionPage() {
             <div>
               <h2 className="text-4xl font-bold mb-6 text-gray-900">Our Mission</h2>
               <p className="text-lg text-brand-gray leading-relaxed mb-6">
-                To be the trusted global supplier of premium minerals and chemicals, delivering exceptional quality and reliable service to diverse industries across South Asia and beyond.
+                To deliver reliable merchant export solutions through strategic sourcing, quality-focused procurement, efficient supply chain management, and seamless international trade operations. We are committed to helping businesses worldwide access high-quality Indian products with professionalism, transparency, and excellence.
               </p>
               <p className="text-lg text-brand-gray leading-relaxed mb-6">
                 We are committed to:
@@ -112,7 +112,7 @@ export default function MissionVisionPage() {
             <div className="order-1 md:order-2">
               <h2 className="text-4xl font-bold mb-6 text-gray-900">Our Vision</h2>
               <p className="text-lg text-brand-gray leading-relaxed mb-6">
-                To become the preferred choice for minerals and chemicals in the South Asian market, recognized for exceptional quality, innovation, and customer service.
+                To become a globally trusted trading partner by connecting quality Indian products with international markets, fostering sustainable business relationships, and creating long-term value for customers, suppliers, and stakeholders worldwideferred choice for minerals and chemicals in the South Asian market, recognized for exceptional quality, innovation, and customer service.
               </p>
               <p className="text-lg text-brand-gray leading-relaxed mb-6">
                 We envision:
