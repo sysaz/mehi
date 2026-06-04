@@ -38,7 +38,7 @@ export default function AboutPage() {
             </div>
             <div>
               <img
-                src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg"
+                src="/images/about-who-we-are.png"
                 alt="Company overview"
                 className="rounded-xl shadow-lg"
               />
