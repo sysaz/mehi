@@ -3,7 +3,7 @@ import BlurImage from '../components/BlurImage';
 
 const HEADER_PLACEHOLDER = "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADQAwCdASoUAAsAPzmEuVOvKKWisAgB4CcJYgAAW9vLS9fboPEvaoAA/lte6o4HNZj/8tPWOjYUFN00Xn1R4fOFB+GCdPCg0Apjqz6Ns6T2lyKbgVT0I4AA";
 
-export default function HomePage() {
+export default function HomePage({ setCurrentPage }: { setCurrentPage: (page: string) => void }) {
   return (
     <div>
       {/* Hero Section */}
@@ -74,7 +74,10 @@ export default function HomePage() {
                 <span>Get In Touch</span>
                 <ArrowRight size={20} />
               </a>
-              <button className="border-2 border-white hover:bg-white hover:text-gray-900 text-white px-8 py-3 rounded-lg font-semibold transition-colors">
+              <button
+                onClick={() => setCurrentPage('products')}
+                className="border-2 border-white hover:bg-white hover:text-gray-900 text-white px-8 py-3 rounded-lg font-semibold transition-colors"
+              >
                 Explore Products
               </button>
             </div>

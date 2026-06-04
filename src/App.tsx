@@ -33,7 +33,7 @@ function App() {
       case 'quality':
         return <QualityPage />;
       default:
-        return <HomePage />;
+        return <HomePage setCurrentPage={setCurrentPage} />;
     }
   };
 

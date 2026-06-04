@@ -11,8 +11,8 @@ export default function Navigation({ currentPage, setCurrentPage }: NavigationPr
 
   const navItems = [
     { label: 'Home', key: 'home' },
-    { label: 'About Us', key: 'about' },
     { label: 'Products', key: 'products' },
+    { label: 'About Us', key: 'about' },
     { label: 'Industries', key: 'industries' },
     { label: 'Our Clients', key: 'clients' },
     { label: 'Mission & Vision', key: 'mission' },

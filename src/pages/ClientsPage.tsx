@@ -1,6 +1,49 @@
-﻿import { Building2, Globe, TrendingUp } from 'lucide-react';
+﻿import { Building2, Globe, TrendingUp, Mail, MessageCircle, X } from 'lucide-react';
+import { useState } from 'react';
+
+function RequestSamplesModal({ onClose }: { onClose: () => void }) {
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+      {/* Backdrop */}
+      <div className="absolute inset-0 bg-black/50 backdrop-blur-sm" onClick={onClose} />
+
+      {/* Modal */}
+      <div className="relative bg-white rounded-2xl shadow-2xl w-full max-w-sm p-8 text-center">
+        <button
+          onClick={onClose}
+          className="absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition-colors"
+        >
+          <X size={20} />
+        </button>
+
+        <h3 className="text-xl font-bold text-gray-900 mb-2">Request Samples</h3>
+        <p className="text-brand-gray text-sm mb-8">How would you like to reach us?</p>
+
+        <div className="flex flex-col gap-4">
+          <a
+            href="mailto:mehiwt@gmail.com?subject=Sample Request&body=Hello, I would like to request samples."
+            className="flex items-center justify-center gap-3 bg-brand-navy hover:bg-brand-navy-dark text-white px-6 py-4 rounded-xl font-semibold transition-colors"
+          >
+            <Mail size={20} />
+            Send via Email
+          </a>
+          <a
+            href="https://wa.me/919830261334?text=Hello%2C%20I%20would%20like%20to%20request%20samples."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-3 bg-green-500 hover:bg-green-600 text-white px-6 py-4 rounded-xl font-semibold transition-colors"
+          >
+            <MessageCircle size={20} />
+            Send via WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+}
 
 export default function ClientsPage() {
+  const [showSamplesModal, setShowSamplesModal] = useState(false);
   const clients = [
     {
       name: 'Asia Coatings',
@@ -165,7 +208,10 @@ export default function ClientsPage() {
               >
                 Start Partnership
               </a>
-              <button className="inline-block border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-brand-navy transition-colors">
+              <button
+                onClick={() => setShowSamplesModal(true)}
+                className="inline-block border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-brand-navy transition-colors"
+              >
                 Request Samples
               </button>
             </div>
@@ -207,6 +253,8 @@ export default function ClientsPage() {
           </div>
         </div>
       </section>
+
+      {showSamplesModal && <RequestSamplesModal onClose={() => setShowSamplesModal(false)} />}
     </div>
   );
 }
