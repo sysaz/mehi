@@ -19,8 +19,8 @@ export default function HomePage() {
             height="640"
             fetchPriority="high"
           />
-          {/* Mobile: strong overlay for readability; Desktop: left-to-right gradient */}
-          <div className="absolute inset-0 bg-brand-navy/90 md:bg-gradient-to-r md:from-brand-navy md:via-brand-navy/88 md:to-brand-navy/10" />
+          {/* Gradient overlay: solid navy on left, fades to transparent on right */}
+          <div className="absolute inset-0 bg-gradient-to-r from-brand-navy via-brand-navy/88 to-brand-navy/10" />
           {/* Bottom fade: hero bleeds into the next section */}
           <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white via-white/60 to-transparent" />
         </div>
