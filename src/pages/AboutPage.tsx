@@ -13,7 +13,7 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-brand-navy to-brand-navy-dark text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-5xl font-bold mb-4">About MEHI</h1>
+          <h1 className="text-5xl font-bold mb-4">About Mehi</h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
             A trusted global supplier of premium minerals and chemicals serving diverse industries since 2021
           </p>
@@ -27,7 +27,7 @@ export default function AboutPage() {
             <div>
               <h2 className="text-4xl font-bold mb-6 text-gray-900">Who We Are</h2>
               <p className="text-lg text-brand-gray mb-4 leading-relaxed">
-                MEHI Worldwide Trading Private Limited is a leading supplier of industrial minerals and chemicals, serving major industries across South Asia.
+                Mehi Worldwide Trading Private Limited is a leading supplier of industrial minerals and chemicals, serving major industries across South Asia.
               </p>
               <p className="text-lg text-brand-gray mb-4 leading-relaxed">
                 Established in 2021 with a commitment to excellence, we provide high-quality materials that meet international standards for food, pharmaceuticals, cosmetics, and 15+ other industries.
@@ -52,7 +52,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold mb-12 text-gray-900 text-center">Company Details</h2>
 
-          <div className="grid md:grid-cols-2 gap-12 mb-12">
+          <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-200">
               <div className="flex items-center space-x-3 mb-4">
                 <Building2 className="text-brand-navy" size={24} />
@@ -61,7 +61,7 @@ export default function AboutPage() {
               <div className="space-y-4 text-brand-gray">
                 <div>
                   <p className="text-sm font-medium text-gray-600">Company Name</p>
-                  <p className="font-semibold">MEHI Worldwide Trading Private Limited</p>
+                  <p className="font-semibold">Mehi Worldwide Trading Private Limited</p>
                 </div>
                 <div>
                   <p className="text-sm font-medium text-gray-600">CIN</p>
@@ -81,18 +81,43 @@ export default function AboutPage() {
                 700001
               </p>
             </div>
-          </div>
 
-          <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-200">
-            <div className="flex items-center space-x-3 mb-6">
-              <Building2 className="text-brand-navy" size={24} />
-              <h3 className="text-xl font-semibold text-gray-900">Corporate Office</h3>
+            <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-200">
+              <div className="flex items-center space-x-3 mb-4">
+                <Building2 className="text-brand-navy" size={24} />
+                <h3 className="text-xl font-semibold text-gray-900">Corporate Office</h3>
+              </div>
+              <p className="text-brand-gray leading-relaxed">
+                1st Floor, Sai Complex, OT Road,<br />
+                Inda, Kharagpur, West Bengal, India<br />
+                721301
+              </p>
             </div>
-            <p className="text-brand-gray leading-relaxed">
-              1st Floor, Sai Complex, OT Road,<br />
-              Inda, Kharagpur, West Bengal, India<br />
-              721301
-            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Registrations & Affiliations */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-4xl font-bold mb-12 text-gray-900 text-center">Registrations &amp; Affiliations</h2>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+            {[
+              { code: 'IEC', name: 'Import Export Code' },
+              { code: 'APEDA', name: 'Agricultural and Processed Food Products Export Development Authority' },
+              { code: 'CAPEXIL', name: 'Chemical and Allied Products Export Promotion Council' },
+              { code: 'IBM', name: 'Indian Bureau of Mines' },
+              { code: 'JIMMS', name: 'Jharkhand Integrated Mines & Mineral Management System' },
+              { code: 'FSSAI', name: 'Food Safety and Standards Authority of India' },
+              { code: 'ISO 9001:2025', name: 'International Organization for Standardization' },
+              { code: 'UDYAM', name: 'MSME Registered' },
+              { code: 'Make in India', name: 'Government of India Initiative' },
+            ].map((item) => (
+              <div key={item.code} className="bg-gray-50 border border-gray-200 rounded-xl p-4 flex flex-col gap-1 hover:shadow-md hover:border-brand-navy/30 transition-all">
+                <p className="text-brand-navy font-bold text-sm leading-tight">{item.code}</p>
+                <p className="text-gray-500 text-xs leading-snug">{item.name}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>

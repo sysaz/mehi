@@ -80,7 +80,7 @@ export default function QualityPage() {
             <div>
               <h2 className="text-4xl font-bold mb-6 text-gray-900">Our Quality Philosophy</h2>
               <p className="text-lg text-brand-gray leading-relaxed mb-6">
-                At MEHI, quality is not just a requirement—it's our promise to every client. We believe that delivering superior products is essential for the success of our partners and the industries they serve.
+                At Mehi, quality is not just a requirement—it's our promise to every client. We believe that delivering superior products is essential for the success of our partners and the industries they serve.
               </p>
               <p className="text-lg text-brand-gray leading-relaxed mb-6">
                 Our approach to quality encompasses:

@@ -49,31 +49,41 @@ export default function ClientsPage() {
       name: 'Asia Coatings',
       country: 'Bangladesh',
       industry: 'Paints & Coatings',
-      image: 'https://images.pexels.com/photos/3962286/pexels-photo-3962286.jpeg',
+      image: '/images/clients/asia-coatings.svg',
+      imgBg: '#fff',
+      imgFit: 'contain' as const,
     },
     {
       name: 'JAT Holdings',
       country: 'Sri Lanka',
       industry: 'Multi-Industry',
-      image: 'https://images.pexels.com/photos/3155026/pexels-photo-3155026.jpeg',
+      image: '/images/clients/jat-holdings.webp',
+      imgBg: '#0d2a4a',
+      imgFit: 'contain' as const,
     },
     {
       name: 'Lanka Tiles',
       country: 'Sri Lanka',
       industry: 'Ceramics & Tiles',
-      image: 'https://images.pexels.com/photos/2440471/pexels-photo-2440471.jpeg',
+      image: '/images/clients/lanka-tiles.svg',
+      imgBg: '#e8e8e8',
+      imgFit: 'contain' as const,
     },
     {
       name: 'Mackson Tiles',
       country: 'Sri Lanka',
       industry: 'Ceramics & Tiles',
-      image: 'https://images.pexels.com/photos/439405/pexels-photo-439405.jpeg',
+      image: '/images/clients/mackson-tiles.png',
+      imgBg: '#fff',
+      imgFit: 'contain' as const,
     },
     {
       name: 'Jaya Coconut',
       country: 'India',
       industry: 'Food & Agriculture',
-      image: 'https://images.pexels.com/photos/4551832/pexels-photo-4551832.jpeg',
+      image: '',
+      imgBg: '#f8f8f8',
+      imgFit: 'contain' as const,
     },
   ];
 
@@ -92,7 +102,7 @@ export default function ClientsPage() {
       {/* Client Stats */}
       <section className="bg-brand-navy-light py-12 border-b border-[#ADBFD9]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-3 gap-8 text-center">
+          <div className="grid grid-cols-3 gap-4 text-center">
             <div>
               <p className="text-4xl font-bold text-brand-navy mb-2">5</p>
               <p className="text-brand-gray font-semibold">Key Clients</p>
@@ -119,12 +129,21 @@ export default function ClientsPage() {
                 className="group bg-white rounded-xl overflow-hidden border border-gray-200 hover:shadow-xl hover:border-[#84A0C3] transition-all duration-300"
               >
                 {/* Client Image */}
-                <div className="h-48 overflow-hidden bg-gray-200">
-                  <img
-                    src={client.image}
-                    alt={client.name}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
+                <div
+                  className="h-48 overflow-hidden flex items-center justify-center p-6"
+                  style={{ backgroundColor: client.imgBg }}
+                >
+                  {client.image ? (
+                    <img
+                      src={client.image}
+                      alt={client.name}
+                      className={`max-h-full max-w-full transition-transform duration-300 group-hover:scale-105 ${client.imgFit === 'cover' ? 'w-full h-full object-cover' : 'object-contain'}`}
+                    />
+                  ) : (
+                    <span className="text-2xl font-bold text-gray-900 text-center leading-snug">
+                      {client.name}
+                    </span>
+                  )}
                 </div>
 
                 {/* Client Info */}
@@ -159,7 +178,7 @@ export default function ClientsPage() {
       <section className="bg-gray-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">
-            Why Clients Choose MEHI
+            Why Clients Choose Mehi
           </h2>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -196,7 +215,7 @@ export default function ClientsPage() {
           <div className="bg-gradient-to-r from-brand-navy to-brand-navy-dark text-white rounded-2xl p-12 text-center">
             <h2 className="text-4xl font-bold mb-4">Ready to Partner With Us?</h2>
             <p className="text-xl text-brand-navy-mid mb-8 max-w-2xl mx-auto">
-              Join our network of satisfied clients and experience the MEHI difference
+              Join our network of satisfied clients and experience the Mehi difference
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

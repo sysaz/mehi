@@ -140,19 +140,19 @@ export default function IndustriesPage() {
     {
       name: 'Paper & Pulp',
       icon: FileText,
-      products: ['Talc', 'Calcium Carbonate', 'Hydrated Lime', 'Kaolin'],
+      products: ['Talc', 'Calcium Carbonate', 'Hydrated Lime', 'Kaolin', 'China Clay'],
       description: 'Coating and filling materials for superior paper quality',
     },
     {
       name: 'Foundry',
       icon: Hammer,
-      products: ['Kaolin', 'Feldspar'],
+      products: ['Kaolin', 'Feldspar', 'Bentonite', 'Ball Clay Powder'],
       description: 'Specialized materials for foundry operations and metal casting',
     },
     {
       name: 'Ceramics & Glass',
       icon: Gem,
-      products: ['Talc', 'Kaolin', 'Quartz', 'Calcium Carbonate'],
+      products: ['Talc', 'Kaolin', 'Calcined Kaolin', 'Quartz', 'Calcium Carbonate', 'Feldspar', 'Dolomite', 'Ball Clay Powder', 'China Clay', 'Bauxite'],
       description: 'Raw materials ensuring exceptional ceramic and glass properties',
     },
     {
@@ -164,13 +164,13 @@ export default function IndustriesPage() {
     {
       name: 'Agriculture & Fertilizers',
       icon: Wheat,
-      products: ['Calcium Carbonate', 'Kaolin', 'Feldspar', 'Hydrated Lime', 'Bentonite'],
+      products: ['Calcium Carbonate', 'Kaolin', 'Feldspar', 'Hydrated Lime', 'Quick Lime', 'Bentonite'],
       description: 'Soil amendments and fertilizer components for crop enhancement',
     },
     {
       name: 'Refractories',
       icon: Flame,
-      products: ['Bauxite', 'China Clay'],
+      products: ['Bauxite', 'China Clay', 'Calcined Kaolin', 'Dolomite', 'Quick Lime'],
       description: 'High-temperature resistant materials for industrial furnaces',
     },
   ];
@@ -242,7 +242,7 @@ export default function IndustriesPage() {
       {/* Summary Section */}
       <section className="bg-gradient-to-r from-brand-navy-light to-brand-navy-mid py-16 border-y border-[#ADBFD9]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-3 gap-8 text-center">
+          <div className="grid grid-cols-3 gap-4 text-center">
             <div>
               <p className="text-4xl font-bold text-brand-navy mb-2">15+</p>
               <p className="text-brand-gray font-semibold">Industries Served</p>

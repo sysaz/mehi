@@ -34,14 +34,14 @@ export default function Navigation({ currentPage, setCurrentPage }: NavigationPr
             className="cursor-pointer flex items-center gap-3"
           >
             <img
-              src="/mehi-logo.png"
-              alt="MEHI"
+              src="/images/logos/mehi-logo-new.png"
+              alt="Mehi"
               className="h-10 w-10 object-contain"
               width="40"
               height="40"
             />
             <div>
-              <p className="text-brand-navy font-bold text-base leading-tight tracking-wide">MEHI</p>
+              <p className="text-brand-navy font-bold text-base leading-tight tracking-wide">Mehi</p>
               <p className="text-brand-gray text-[10px] leading-tight tracking-wider uppercase">Worldwide Trading Pvt. Ltd.</p>
             </div>
           </div>
@@ -100,15 +100,6 @@ export default function Navigation({ currentPage, setCurrentPage }: NavigationPr
                 {item.label}
               </button>
             ))}
-            <a
-              href="https://wa.me/919830261334"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center space-x-2 bg-green-500 hover:bg-green-600 text-white px-4 py-3 rounded-lg font-medium w-full justify-center"
-            >
-              <MessageCircle size={18} />
-              <span>WhatsApp</span>
-            </a>
           </div>
         )}
       </div>

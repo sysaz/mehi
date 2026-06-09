@@ -3,7 +3,7 @@ import BlurImage from '../components/BlurImage';
 
 const HEADER_PLACEHOLDER = "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADQAwCdASoUAAsAPzmEuVOvKKWisAgB4CcJYgAAW9vLS9fboPEvaoAA/lte6o4HNZj/8tPWOjYUFN00Xn1R4fOFB+GCdPCg0Apjqz6Ns6T2lyKbgVT0I4AA";
 
-export default function HomePage({ setCurrentPage }: { setCurrentPage: (page: string) => void }) {
+export default function HomePage() {
   return (
     <div>
       {/* Hero Section */}
@@ -27,22 +27,22 @@ export default function HomePage({ setCurrentPage }: { setCurrentPage: (page: st
 
         {/* Content */}
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-          {/* Logo + Company Name */}
-          <div className="flex items-center gap-4 mb-12">
+          {/* Logo + Brand Name */}
+          <div className="flex items-center gap-5 mb-12">
             <img
-              src="/mehi-logo.png"
-              alt="MEHI"
-              className="h-14 w-14 object-contain"
-              width="56"
-              height="56"
+              src="/images/logos/mehi-logo-new.png"
+              alt="Mehi"
+              className="h-16 w-16 object-contain flex-shrink-0"
+              width="64"
+              height="64"
               style={{ filter: 'brightness(0) invert(1)' }}
             />
-            <div className="border-l border-white/40 pl-4">
-              <p className="text-white font-bold text-xl leading-tight tracking-widest uppercase">
-                MEHI
+            <div className="border-l-2 border-white/40 pl-5">
+              <p className="text-white font-black italic text-xl leading-tight tracking-widest uppercase">
+                Worldwide Trading
               </p>
-              <p className="text-white/70 text-xs leading-tight tracking-wider uppercase">
-                Worldwide Trading Private Limited
+              <p className="text-white font-black italic text-xl leading-tight tracking-widest uppercase">
+                Private Limited
               </p>
             </div>
           </div>
@@ -63,23 +63,17 @@ export default function HomePage({ setCurrentPage }: { setCurrentPage: (page: st
               We help businesses worldwide source high-quality products from India through reliable merchant export services, strategic sourcing solutions, and expert management of industrial minerals, specialty chemicals, and international trade operations.
             </p>
 
-            {/* Buttons */}
+            {/* Button */}
             <div className="flex flex-wrap gap-4">
               <a
                 href="https://wa.me/919830261334"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-brand-navy hover:bg-brand-navy-dark text-white px-8 py-3 rounded-lg font-semibold flex items-center space-x-2 transition-colors border border-white/20"
+                className="bg-white hover:bg-gray-100 text-brand-navy px-8 py-3 rounded-lg font-semibold flex items-center space-x-2 transition-colors"
               >
                 <span>Get In Touch</span>
                 <ArrowRight size={20} />
               </a>
-              <button
-                onClick={() => setCurrentPage('products')}
-                className="border-2 border-white hover:bg-white hover:text-gray-900 text-white px-8 py-3 rounded-lg font-semibold transition-colors"
-              >
-                Explore Products
-              </button>
             </div>
           </div>
         </div>
@@ -113,7 +107,7 @@ export default function HomePage({ setCurrentPage }: { setCurrentPage: (page: st
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-center mb-16 text-gray-900">
-            Why Choose MEHI
+            Why Choose Mehi
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="bg-gray-50 p-8 rounded-xl hover:shadow-lg transition-shadow">
@@ -150,9 +144,9 @@ export default function HomePage({ setCurrentPage }: { setCurrentPage: (page: st
 
             <div className="bg-gray-50 p-8 rounded-xl hover:shadow-lg transition-shadow">
               <Award className="text-brand-navy mb-4" size={32} />
-              <h3 className="text-xl font-semibold mb-3 text-gray-900">IEC Registered</h3>
+              <h3 className="text-xl font-semibold mb-3 text-gray-900">Professional Approach</h3>
               <p className="text-brand-gray text-sm">
-                Certified Merchant Exporter
+                Structured trade processes and compliance-first operations for every order.
               </p>
             </div>
 

@@ -56,13 +56,21 @@ export default function ProductShowcase({ products }: ProductShowcaseProps) {
             onClick={() => setSelected(product)}
             className="group relative aspect-square overflow-hidden rounded-xl shadow-md hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-brand-navy focus:ring-offset-2 transition-shadow"
           >
-            <img
-              src={product.image}
-              alt={product.name}
-              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 bg-gray-200"
-              loading="lazy"
-              decoding="async"
-            />
+            {product.image ? (
+              <img
+                src={product.image}
+                alt={product.name}
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 bg-gray-200"
+                loading="lazy"
+                decoding="async"
+              />
+            ) : (
+              <div className="w-full h-full bg-gradient-to-br from-brand-navy to-[#1a3a5c] flex items-center justify-center">
+                <span className="text-white/80 text-2xl font-bold tracking-wider">
+                  {product.name.split(' ').map(w => w[0]).join('').slice(0, 3)}
+                </span>
+              </div>
+            )}
             {/* Permanent bottom strip */}
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-gray-900/75 to-transparent px-2 pt-6 pb-2 group-hover:opacity-0 transition-opacity duration-200">
               <p className="text-white text-xs font-medium truncate leading-tight">
@@ -100,11 +108,19 @@ export default function ProductShowcase({ products }: ProductShowcaseProps) {
           >
             {/* Image header */}
             <div className="relative h-52 rounded-t-2xl overflow-hidden flex-shrink-0">
-              <img
-                src={selected.image}
-                alt={selected.name}
-                className="w-full h-full object-cover"
-              />
+              {selected.image ? (
+                <img
+                  src={selected.image}
+                  alt={selected.name}
+                  className="w-full h-full object-cover"
+                />
+              ) : (
+                <div className="w-full h-full bg-gradient-to-br from-brand-navy to-[#1a3a5c] flex items-center justify-center">
+                  <span className="text-white/70 text-5xl font-bold tracking-widest">
+                    {selected.name.split(' ').map(w => w[0]).join('').slice(0, 3)}
+                  </span>
+                </div>
+              )}
               <button
                 onClick={() => setSelected(null)}
                 className="absolute top-3 right-3 bg-white/90 hover:bg-white rounded-full p-1.5 text-brand-gray shadow-md transition-colors"
